@@ -1,0 +1,78 @@
+img{
+    height: 128px;
+    border-radius: 8px;
+}
+.image{
+    height: 128px;
+    border-radius: 8px;
+    position: relative;
+    top: 10%;
+}
+.col{
+    display: inline-flex;
+}
+.maincontainer{
+    display: flex;
+    margin: 16px;
+    width:90%;
+    justify-content: space-between;
+}
+.objectname{
+    font-size: 24px;
+    font-weight: 500;
+}
+.objectprice{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price{
+    text-align: right;   
+}
+
+.block{
+    border-style: solid;
+    border-color: #292b2c;
+    border-width: 1px;
+}
+.billrow{
+    display: flex;
+    justify-content: end;
+    margin-top: 16px;
+}
+
+.billing{
+    width:50%;
+    text-align: right;
+}
+
+.amount{
+    font-size: 20px;
+}
+
+.total{
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 500px)  {
+    .objectname{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .maincontainer{
+        flex-direction: column;
+    }
+    .objectprice{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .price{
+        text-align: left;   
+    }
+    .billing{
+        width: 100%;
+    }
+}
